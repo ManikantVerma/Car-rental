@@ -41,6 +41,8 @@
             height: 38px; /* Increased height for the navbar */
         }
 
+        
+
         /* Logo */
         .logo {
             display: flex;
