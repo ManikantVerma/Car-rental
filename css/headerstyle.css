@@ -1,0 +1,149 @@
+/* Header styling */
+.header {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Image Slider */
+  .slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Navigation bar */
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav a:hover {
+    background-color: #e70c0c;
+    border-radius: 5px;
+  }
+  
+  /* Centered text in header */
+  .header-content {
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+  }
+  
+  .header-content-left {
+    margin: 10px 0;
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+  }
+  
+  .header-content-left label {
+    display: block;
+    color: #f4e7c3; /* Sandy beige for desert contrast */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  .header-content-left input,
+  .header-content-left select {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .header-content-left select {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .header-content-left select:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: #d48800;
+  }
+  
+  .header-content-left select:focus {
+    outline: none;
+    border-color: #f0a500;
+    box-shadow: 0 0 5px rgba(240, 165, 0, 0.5);
+  }
+  
+  .header-content-left select option {
+    background: #fff;
+    color: #333;
+  }
+  
+  .header-content-submit input {
+    background: #f0a500; /* Desert yellow */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  .header-content-submit input:hover {
+    background: #d48800;
+  }
+  
+  .header-content h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f4e7c3; /* Sandy beige */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Additional Section for Vehicle Type Dropdown */
+  .header-content-left select {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .header-content-left select:focus {
+    border-color: #f0a500;
+    box-shadow: 0 0 5px rgba(240, 165, 0, 0.5);
+  }
+  
